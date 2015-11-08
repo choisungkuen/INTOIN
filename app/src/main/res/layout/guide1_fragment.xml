@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="58dp"
+        >
+        <ImageView
+            android:layout_width="137dp"
+            android:layout_height="54dp"
+            android:background="@drawable/g_logo"
+            android:scaleType="fitXY"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="126dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인투인 사용법이 궁금하시죠?\n동영상으로 쉽게 알아보세요~"
+            android:textColor="#c4cbde"
+            android:textSize="17dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="213dp"
+        >
+        <VideoView
+            android:layout_width="347dp"
+            android:layout_height="245dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="535dp"
+        >
+        <Button
+
+            android:id="@+id/go_bt"
+            android:layout_width="254dp"
+            android:layout_height="45dp"
+            android:background="#09d0a0"
+            android:text="바로 시작하기"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            />
+
+    </LinearLayout>
+
+    </RelativeLayout>

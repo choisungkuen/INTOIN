@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <!--탭메뉴 폰트 컬러-->
+    <color name="tabnormalfont">#a2efdf</color>
+    <color name="tabnormalbg">#00b58a</color>
+
+    <color name="tabenblefont">#f9ffc1</color>
+    <color name="tabenblebg">#059b76</color>
+
+
+    <!-- 인투인 컬러-->
+    <color name="gray">#dbd8d8</color>
+    <color name="green">#00b58a</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <!-- 가이드 인디케이터 컬러-->
+    <color name="intoin_radius_on">#09d0a0</color>
+    <color name="intoin_radius_off">#81848d</color>
+
+</resources>

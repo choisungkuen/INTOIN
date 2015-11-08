@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.intoin.myapplication" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:name=".Myapplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data android:name="com.kakao.sdk.AppKey"
+            android:value="033ee6f29daee2778c148db1f75640ee" />
+        <activity
+            android:name=".login.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".login.LoginActivity"
+            >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+        <activity
+            android:name="com.example.intoin.myapplication.login.ExloginActivity"
+
+            >
+
+        </activity>
+        <activity
+            android:name="com.example.intoin.myapplication.login.SearchIDActivity"
+            >
+
+        </activity>
+        <activity
+            android:name="com.example.intoin.myapplication.login.SearchIDcompleteActivity"
+            >
+
+        </activity>
+        <activity
+            android:name="com.example.intoin.myapplication.login.PasswordSearchActivity"
+            >
+
+        </activity>
+        <activity
+            android:name="com.example.intoin.myapplication.login.PasswordReActivity"
+            >
+
+        </activity>
+
+        <activity
+            android:name=".login.SampleSignupActivity"
+            >
+
+        </activity>
+        <activity
+            android:name="Mo"
+            >
+
+        </activity>
+        <activity
+            android:name=".viewpager.ViewpagerActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            >
+
+        </activity>
+
+
+
+
+
+
+
+    </application>
+
+</manifest>

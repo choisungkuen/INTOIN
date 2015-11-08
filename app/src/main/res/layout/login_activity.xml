@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="27dp"
+        >
+        <ImageView
+            android:layout_width="114dp"
+            android:layout_height="41dp"
+            android:background="@drawable/l_logo"
+            android:id="@+id/l_logo"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="25dp">
+        <com.example.intoin.myapplication.login.LoginButton
+            android:id="@+id/kakao_login_bt"
+            android:layout_width="309dp"
+            android:layout_height="54dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+
+        >
+        <TextView
+            android:text="아직 회원 가입을 하지 않으셨나요?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#828181"
+            android:textSize="17dp"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:gravity="center"
+            >
+            <EditText
+                android:id="@+id/id_et"
+                android:layout_width="309dp"
+                android:layout_height="40dp"
+                android:background="@drawable/l_form"
+                android:ems="10"
+                android:inputType="textUri"
+                android:paddingLeft="5dp"
+                android:textColor="#b0adaf"
+                android:hint="아이디/이메일"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="13dp"
+            >
+            <EditText
+                android:id="@+id/pw_et"
+                android:layout_width="309dp"
+                android:layout_height="40dp"
+                android:background="@drawable/l_form"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:textColor="#b0adaf"
+                android:hint="비밀번호"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+
+
+            >
+            <CheckBox
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:id="@+id/checkBox"
+
+                android:background="@drawable/custom_checkbox"
+                android:button="@color/green"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:textColor="#555556"
+                android:textSize="15dp"
+                android:text="비밀번호 표시"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="19dp"
+       >
+        <Button
+            android:id="@+id/intoin_join_bt"
+            android:layout_width="309dp"
+            android:layout_height="42dp"
+            android:background="@drawable/l_joinbt"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:text="회원 가입"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:layout_marginBottom="1dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기존 회원 로그인"
+            android:textColor="#7e7f80"
+            android:textSize="15dp"
+            android:id="@+id/intoin_login_tv"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="309dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:layout_marginBottom="30dp">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+

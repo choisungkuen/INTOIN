@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="62dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MGM계약을 자세히 쉽고 간편하게 확인,등록!"
+            android:textSize="17dp"
+            android:textColor="#c4cbde"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="111dp"
+        >
+
+        <ImageView
+            android:layout_width="325dp"
+            android:layout_height="356dp"
+            android:background="@drawable/g3_img"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="535dp"
+        >
+        <Button
+            android:id="@+id/go_bt"
+            android:layout_width="254dp"
+            android:layout_height="45dp"
+            android:background="#09d0a0"
+            android:text="바로 시작하기"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
