@@ -3,31 +3,39 @@
     android:id="@+id/linear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/gray"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+
+
     >
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="137dp"
         android:orientation="horizontal"
-        >
-        <LinearLayout
-            android:layout_width="190dp"
-            android:layout_height="137dp"
-            android:orientation="horizontal"
-            >
+        android:layout_gravity="center"
 
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            >
             <FrameLayout
                 android:layout_width="190dp"
                 android:layout_height="137dp">
 
                 <ImageView
-                    android:id="@+id/image_1"
+                    android:id="@+id/header_image1"
                     android:layout_width="190dp"
                     android:layout_height="137dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitXY"
-                    android:background="@drawable/five"
+                    android:background="@drawable/seven"
                     />
 
                 <ImageView
@@ -48,7 +56,9 @@
                     android:padding="8dp"
                     android:text="가나다라마바사"
                     android:textColor="@color/gray"
-                    android:layout_gravity="left|bottom" />
+                    android:layout_gravity="left|bottom"
+
+                    />
 
                 <ImageButton
 
@@ -63,36 +73,363 @@
                     android:layout_gravity="right|top" />
 
             </FrameLayout>
-            </LinearLayout>
 
-            <LinearLayout
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="137dp">
+
+
+        <FrameLayout
+            android:layout_width="155dp"
+            android:layout_height="137dp"
+            android:layout_marginLeft="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/header_image2"
                 android:layout_width="155dp"
                 android:layout_height="137dp"
-                android:orientation="horizontal"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/two"
+                />
+
+
+            <ImageView
+                android:id="@+id/hot2"
+                android:layout_width="35dp"
+                android:layout_height="36dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/new_icon"
+                />
+
+
+            <TextView
+                android:id="@+id/img_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="가나다라마바사"
+                android:textColor="@color/gray"
+                android:layout_gravity="left|bottom" />
+
+            <ImageButton
+
+                android:id="@+id/bookmark2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bookmark_tab"
+                android:layout_gravity="right|top" />
+        </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="204dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <FrameLayout
+            android:layout_width="225dp"
+            android:layout_height="204dp">
+
+            <ImageView
+                android:id="@+id/header_image3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/three"
+                />
+
+            <ImageView
+                android:id="@+id/hot3"
+                android:layout_width="35dp"
+                android:layout_height="36dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/hot_icon"
+                />
+
+
+            <TextView
+                android:id="@+id/img_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="가나다라마바사"
+                android:textColor="@color/gray"
+                android:layout_gravity="left|bottom"
+
+                />
+
+            <ImageButton
+
+                android:id="@+id/bookmark3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bookmark_normal"
+                android:layout_gravity="right|top" />
+
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <FrameLayout
+                android:layout_width="120dp"
+                android:layout_height="121dp"
+                android:layout_marginLeft="5dp"
                 >
 
-
-                <FrameLayout
-                    android:layout_width="155dp"
-                    android:layout_height="137dp">
-
-                    <ImageView
-                        android:id="@+id/image_2"
-                        android:layout_width="190dp"
-                        android:layout_height="match_parent"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitXY"
-                        android:background="@drawable/five"
-                        />
-                </FrameLayout>
-
-            </LinearLayout>
+                <ImageView
+                    android:id="@+id/header_image4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/four"
+                    />
 
 
+                <ImageView
+                    android:id="@+id/hot4"
+                    android:layout_width="35dp"
+                    android:layout_height="36dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/new_icon"
+                    />
+
+
+                <TextView
+                    android:id="@+id/img_name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="가나다라마바사"
+                    android:textColor="@color/gray"
+                    android:layout_gravity="left|bottom" />
+
+                <ImageButton
+
+                    android:id="@+id/bookmark4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bookmark_tab"
+                    android:layout_gravity="right|top" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="120dp"
+                android:layout_height="77dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+
+
+                >
+
+                <ImageView
+                    android:id="@+id/header_image5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/five"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/hot5"
+                    android:layout_width="35dp"
+                    android:layout_height="36dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/new_icon"
+                    />
+
+
+                <TextView
+                    android:id="@+id/img_name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="가나다라마바사"
+                    android:textColor="@color/gray"
+                    android:layout_gravity="left|bottom" />
+
+                <ImageButton
+                    android:id="@+id/bookmark5"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bookmark_tab"
+                    android:layout_gravity="right|top" />
+            </FrameLayout>
+
+
+        </LinearLayout>
 
 
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="137dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="190dp"
+                android:layout_height="137dp">
+
+                <ImageView
+                    android:id="@+id/header_image6"
+                    android:layout_width="190dp"
+                    android:layout_height="137dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/seven"
+                    />
+
+                <ImageView
+                    android:id="@+id/hot6"
+                    android:layout_width="35dp"
+                    android:layout_height="36dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/hot_icon"
+                    />
+
+
+                <TextView
+                    android:id="@+id/img_name6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="가나다라마바사"
+                    android:textColor="@color/gray"
+                    android:layout_gravity="left|bottom"
+
+                    />
+
+                <ImageButton
+
+                    android:id="@+id/bookmark6"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bookmark_normal"
+                    android:layout_gravity="right|top" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+
+            >
+
+
+            <FrameLayout
+                android:layout_width="155dp"
+                android:layout_height="137dp"
+                android:layout_marginLeft="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/header_image7"
+                    android:layout_width="155dp"
+                    android:layout_height="137dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/two"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/hot7"
+                    android:layout_width="35dp"
+                    android:layout_height="36dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/new_icon"
+                    />
+
+
+                <TextView
+                    android:id="@+id/img_name7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="가나다라마바사"
+                    android:textColor="@color/gray"
+                    android:layout_gravity="left|bottom" />
+
+                <ImageButton
+
+                    android:id="@+id/bookmark7"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bookmark_tab"
+                    android:layout_gravity="right|top" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
 
 
 

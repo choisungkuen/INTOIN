@@ -16,14 +16,19 @@ public class SpacesItemDecoration extends RecyclerView.ItemDecoration {
 
     @Override
     public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
-        outRect.left = mSpace;
-        outRect.right = mSpace;
-        outRect.bottom = mSpace;
-        outRect.top = mSpace;
+        outRect.left = mSpace/2;
+        outRect.right = mSpace/2;
+        outRect.bottom = mSpace/2;
+        outRect.top = mSpace/2;
 
         // Add top margin only for the first item to avoid double space between items
-        if (parent.getChildAdapterPosition(view) == 0)
-            outRect.top = mSpace;
+        if (parent.getChildAdapterPosition(view) == 0){
+
+        }
+//            outRect.left = 0;
+//        outRect.right = 0;
+//        outRect.bottom = 0;
+//        outRect.top = 0;
     }
 
 

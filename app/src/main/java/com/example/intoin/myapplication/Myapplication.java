@@ -234,7 +234,7 @@ public class Myapplication extends Application {
 
     public static String getPackageHashKey(Context ctx) {
         try {
-            PackageInfo info = ctx.getPackageManager().getPackageInfo("com.example.intoin.intoin", PackageManager.GET_SIGNATURES);
+            PackageInfo info = ctx.getPackageManager().getPackageInfo("com.example.intoin.myapplication", PackageManager.GET_SIGNATURES);
 
             for (Signature signature : info.signatures) {
                 MessageDigest md = MessageDigest.getInstance("SHA");
