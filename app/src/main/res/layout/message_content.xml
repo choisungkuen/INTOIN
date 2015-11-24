@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/login_actionbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:text="테스트"
+            android:textColor="#6c6c6d"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            >
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="33dp"
+                android:background="@drawable/f_plus_btn"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    
+    <View
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:background="#adacac"
+        android:layout_gravity="center_vertical"
+        ></View>
+    
+    
+    <EditText
+        android:layout_marginTop="22dp"
+        android:layout_width="329dp"
+        android:layout_height="181dp"
+        android:background="@drawable/c_box"
+        android:layout_gravity="center"
+        android:hint="메세지를 입력하세요"
+        android:padding="10dp"
+        android:gravity="top"
+        android:textSize="14dp"
+        >
+
+
+
+
+    </EditText>
+
+
+    <Button
+        android:layout_marginTop="22dp"
+        android:layout_width="329dp"
+        android:layout_height="40dp"
+        android:background="@drawable/d_group_btn"
+        android:text="보내기"
+        android:textColor="#fff5f3"
+        android:textSize="17dp"
+        android:id="@+id/inquiry_Bt"
+        android:layout_gravity="center" />
+
+
+
+
+
+
+
+
+
+</LinearLayout>

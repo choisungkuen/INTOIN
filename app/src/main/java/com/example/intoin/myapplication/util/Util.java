@@ -1,10 +1,11 @@
 package com.example.intoin.myapplication.util;
 
 import android.app.Activity;
-import android.app.AlertDialog;
+
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -29,7 +30,7 @@ public class Util {
 
     //회원가입 성공 팝
     public static void JoinCompletePop(Context context,final Activity activity) {
-        AlertDialog.Builder ab = new AlertDialog.Builder(activity);
+        AlertDialog.Builder ab = new AlertDialog.Builder(context);
         View view = activity.getLayoutInflater().inflate(R.layout.login_dialog, null);
         view.setBackgroundColor(Color.TRANSPARENT);
         Button ok_bt = (Button)view.findViewById(R.id.ok_bt);
@@ -47,6 +48,7 @@ public class Util {
         lp.copyFrom(dialog1.getWindow().getAttributes());
         lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
         lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+
         dialog1.show();
         Window window = dialog1.getWindow();
         window.setAttributes(lp);
@@ -57,7 +59,7 @@ public class Util {
 
     // 메시지 팝업
     public static void MSGCompletePop(Context context,final Activity activity, String text) {
-        AlertDialog.Builder ab = new AlertDialog.Builder(activity);
+        AlertDialog.Builder ab = new AlertDialog.Builder(context);
         View view = activity.getLayoutInflater().inflate(R.layout.msg_dialog, null);
         view.setBackgroundColor(Color.TRANSPARENT);
         Button ok_bt = (Button)view.findViewById(R.id.ok_bt);
@@ -92,7 +94,7 @@ public class Util {
 
     // 고객삭제 팝업
     public static void CustomerDeletePop(Context context,final Activity activity, String text) {
-        AlertDialog.Builder ab = new AlertDialog.Builder(activity);
+        AlertDialog.Builder ab = new AlertDialog.Builder(context);
         View view = activity.getLayoutInflater().inflate(R.layout.customer_dialog, null);
         view.setBackgroundColor(Color.TRANSPARENT);
         Button ok_bt = (Button)view.findViewById(R.id.ok_bt);
@@ -123,7 +125,7 @@ public class Util {
 
     // 라인등록 고객등록 팝업
     public static void CustomerAddePop(final Context context,final Activity activity) {
-        AlertDialog.Builder ab = new AlertDialog.Builder(activity);
+        AlertDialog.Builder ab = new AlertDialog.Builder(context);
         View view = activity.getLayoutInflater().inflate(R.layout.customeradd_dialog, null);
         view.setBackgroundColor(Color.TRANSPARENT);
         Button ok_bt = (Button)view.findViewById(R.id.ok_bt);
