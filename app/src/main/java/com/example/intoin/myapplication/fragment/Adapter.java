@@ -18,6 +18,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.AdapterView> {
     private Context context;
     private static final int TYPE_HEADER = 1, TYPE_ITEM = 2;
     OnItemClickListener onItemClickListener;
+    private String TYPE = null;
 
 
     int[] imgList = {R.drawable.two, R.drawable.one, R.drawable.three, R.drawable.four,
@@ -32,8 +33,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.AdapterView> {
 
 
 
-    public Adapter(Context context){
+    public Adapter(Context context ,String type){
         this.context = context;
+        this.TYPE = type;
 
     }
 
@@ -47,13 +49,23 @@ public class Adapter extends RecyclerView.Adapter<Adapter.AdapterView> {
 
         View layoutView = null;
         switch (viewType){
+
+
             case TYPE_HEADER:
                 layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.grid_header, parent, false);
                 break;
 
             case TYPE_ITEM:
-               layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.grid_item, parent, false);
+
+                if("MGM".equals(TYPE)){
+                    layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.mgm_item, parent, false);
+                    break;
+
+                }
+                layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.model_item, parent, false);
                 break;
+
+
 
 
         }
@@ -73,6 +85,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.AdapterView> {
                 holder.header_image5.setImageResource(imgList[position]);
                 holder.header_image6.setImageResource(imgList[position]);
                 holder.header_image7.setImageResource(imgList[position]);
+
 //        holder.image_2.setImageResource(imgList[position]);
 //        holder.image_3.setImageResource(imgList[position]);
                 holder.textView.setText(header_nameList[position]);
@@ -82,10 +95,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.AdapterView> {
                 break;
 
             case TYPE_ITEM:
+
                 holder.image_1.setImageResource(imgList[position]);
 //        holder.image_2.setImageResource(imgList[position]);
 //        holder.image_3.setImageResource(imgList[position]);
-                holder.textView.setText(nameList[position]);
+//                holder.textView.setText(nameList[position]);
 
                 break;
 
@@ -132,6 +146,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.AdapterView> {
             header_image6 = (ImageView) itemView.findViewById(R.id.header_image6);
             header_image7 = (ImageView) itemView.findViewById(R.id.header_image7);
             itemView.setOnClickListener(this);
+
 
 
 

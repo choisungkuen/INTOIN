@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <include layout="@layout/customer_add_actionbar"></include>
+
+
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:layout_marginBottom="34dp"
+            android:id="@+id/mainframe"
+            >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                >
+
+                <ImageView
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:background="@drawable/profile_icon"
+                    android:id="@+id/profile_iv"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/cl_plus_btn"
+                    android:layout_gravity="right|bottom" />
+
+            </FrameLayout>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:textSize="17dp"
+                android:textColor="#00b589"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@android:color/transparent"
+                    />
+
+
+                <View
+                    android:layout_width="227dp"
+                    android:layout_height="1dp"
+                    android:background="#00b589"></View>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="연락처"
+                android:textSize="17dp"
+                android:textColor="#00b589"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@android:color/transparent"
+                    />
+
+                <View
+                    android:layout_width="227dp"
+                    android:layout_height="1dp"
+                    android:background="#00b589"></View>
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="22dp"
+                android:layout_height="23dp"
+                android:background="@drawable/cl_tab_plus_btn"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="주구매목적"
+                android:textSize="17dp"
+                android:textColor="#00b589"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <Spinner
+                    android:layout_width="180dp"
+                    android:layout_height="36dp">
+
+
+                </Spinner>
+
+                <View
+                    android:layout_width="227dp"
+                    android:layout_height="1dp"
+                    android:background="#00b589"></View>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="그룹"
+                android:textSize="17dp"
+                android:textColor="#00b589"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <Spinner
+                    android:layout_width="180dp"
+                    android:layout_height="36dp">
+
+
+                </Spinner>
+
+                <View
+                    android:layout_width="227dp"
+                    android:layout_height="1dp"
+                    android:background="#00b589"></View>
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="22dp"
+                android:layout_height="23dp"
+                android:background="@drawable/cl_tab_plus_btn"
+                android:layout_gravity="center"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="메모"
+                android:textSize="17dp"
+                android:textColor="#00b589"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@android:color/transparent"
+                    />
+
+                <View
+                    android:layout_width="227dp"
+                    android:layout_height="1dp"
+                    android:background="#00b589"></View>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="22dp"
+                android:layout_height="23dp"
+                android:background="@drawable/cl_tab_plus_btn"
+                android:layout_gravity="center"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

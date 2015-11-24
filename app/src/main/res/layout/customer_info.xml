@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:background="#00b58a"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:id="@+id/relativeLayout3">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/l_back"
+                />
+
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="37dp"
+                android:layout_gravity="right"
+                android:background="@drawable/c_vip_tab_btn"
+                android:layout_marginRight="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/imageView3"
+                android:layout_toStartOf="@+id/imageView3" />
+
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="26dp"
+                android:background="@drawable/c_tab_btn3"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+
+                android:id="@+id/imageView3" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@drawable/profile_icon"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/profile_iv"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="김철수"
+            android:textColor="#f0fff6"
+            android:layout_marginTop="13dp"
+            android:layout_below="@+id/profile_iv"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="핸드폰"
+                android:textColor="#00b589"
+                android:textSize="17dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="15dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="010-2222-5555"
+                    android:layout_marginLeft="9dp"
+                    android:textColor="#6c6c6d"
+                    android:textSize="17dp"
+                    android:layout_marginTop="16dp"
+
+                    />
+
+                <View
+                    android:layout_width="140dp"
+                    android:layout_height="1dp"
+                    android:background="#6c6c6d"
+                    android:layout_marginLeft="9dp"
+                    ></View>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                >
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/c_call_btn"
+                    android:layout_marginRight="13dp"
+                    />
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/c_massege_btn"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="주구매목적"
+                android:textColor="#00b589"
+                android:textSize="17dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="15dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="임대"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="9dp"
+                    android:textColor="#6c6c6d"
+                    android:layout_marginTop="16dp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="그룹"
+                android:textColor="#00b589"
+                android:textSize="17dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="15dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상동 메르빌"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="9dp"
+                    android:textColor="#6c6c6d"
+                    android:layout_marginTop="16dp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="계약건"
+                android:textColor="#00b589"
+                android:textSize="17dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="15dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="부천 상동 메르빌 2차"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="9dp"
+                        android:textColor="#6c6c6d"
+                        android:layout_marginTop="16dp"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="19dp"
+                        android:background="@drawable/c_achieve_icon"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="6dp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(임대 계약)"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="9dp"
+                    android:textColor="#6c6c6d"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="부천 상동 메르빌 2차"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="9dp"
+                            android:textColor="#6c6c6d"
+                            android:layout_marginTop="16dp"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="38dp"
+                            android:layout_height="19dp"
+                            android:background="@drawable/c_standby_icon"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="6dp"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(매매 계약)"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="9dp"
+                        android:textColor="#6c6c6d"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="360dp"
+            android:layout_height="1dp"
+            android:background="#adacac"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            ></View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="메모"
+                android:textColor="#00b589"
+                android:textSize="17dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015-09-14 10:20 메세지(계약성사되었습니다.)"
+                    android:textColor="#727374"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015-09-14 20:10 통화"
+                    android:textSize="15dp"
+                    android:textColor="#727374"
+
+                    />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

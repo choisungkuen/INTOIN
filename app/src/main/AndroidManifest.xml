@@ -3,6 +3,32 @@
     package="com.example.intoin.myapplication" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <permission
+
+        android:name="com.example.intoin.myapplication.locationapi.maps.permission.MAPS_RECEIVE"
+
+        android:protectionLevel="signature" />
+
+
+
+    <uses-permission android:name="com.example.intoin.myapplication.locationapi.maps.permission.MAPS_RECEIVE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-feature
+
+        android:glEsVersion="0x00020000"
+
+        android:required="true" />
+
 
     <application
         android:allowBackup="true"
@@ -14,6 +40,9 @@
         android:theme="@style/AppTheme" >
         <meta-data android:name="com.kakao.sdk.AppKey"
             android:value="033ee6f29daee2778c148db1f75640ee" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAW5iwGLdQD2RItYCP9WW3Yic6Lqwwh0wA" />
         <activity
             android:name=".login.SplashActivity"
             android:label="@string/app_name"
@@ -31,7 +60,7 @@
             >
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".mainactivity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             >
         </activity>
@@ -68,10 +97,65 @@
 
         </activity>
         <activity
-            android:name="Mo"
+            android:name=".mainactivity.ModelDeatailActivity"
+
             >
 
         </activity>
+
+        <activity
+            android:name=".mainactivity.MGMDeatailActivity"
+
+            >
+
+        </activity>
+
+        <activity
+            android:name=".mainactivity.SearchActivity"
+
+            >
+
+        </activity>
+
+        <activity
+            android:name=".mainactivity.CustomerRegistrationActivity"
+
+            >
+
+        </activity>
+
+        <activity
+            android:name=".mainactivity.CustomerInfoActivity"
+
+            >
+
+        </activity>
+        <activity
+            android:name=".mainactivity.CustomerAddActivity"
+            >
+        </activity>
+
+        <activity
+            android:name=".mainactivity.InquiryActivity"
+            >
+        </activity>
+
+        <activity
+            android:name=".mainactivity.LineAddActivity"
+            >
+        </activity>
+        <activity
+            android:name=".mainactivity.LineInfoActivity"
+            >
+        </activity>
+        <activity
+            android:name=".mainactivity.MessageActivity"
+            >
+        </activity>
+
+
+
+
         <activity
             android:name=".viewpager.ViewpagerActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"

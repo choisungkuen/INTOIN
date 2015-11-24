@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <include layout="@layout/deatail_actionbar"
+        android:id="@+id/include" />
+
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/scroll"
+
+        >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:id="@+id/frame"
+            >
+
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_default"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+
+                />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator_default"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:ci_drawable="@drawable/intoin_radius_on"
+                app:ci_drawable_unselected="@drawable/intoin_radius_off"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_alignBottom="@+id/viewpager_default"
+                android:layout_alignRight="@+id/relativeLayout"
+                android:layout_alignEnd="@+id/relativeLayout" />
+
+            <ImageView
+                android:layout_width="47dp"
+                android:layout_height="50dp"
+                android:background="@drawable/page_hot_icon"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bookmark_tab"
+                android:layout_gravity="right|top" />
+        </FrameLayout>
+
+
+
+
+        <!-- 상단 텍스트 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/frame"
+            android:id="@+id/relativeLayout">
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+                android:id="@+id/linearLayout2"
+                android:layout_marginLeft="19dp"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인천작전동"
+                android:textColor="@color/mgm_text_color1"
+                android:background="@drawable/zone_bg"
+                android:gravity="center"
+                android:textSize="11dp"
+                android:padding="5dp"
+
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인천작전동"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/mgm_text_color2"
+                android:background="@drawable/type_bg"
+                android:gravity="center"
+                android:textSize="11dp"
+                android:padding="5dp"
+                />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="19dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout3"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/linearLayout2"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인천작전동"
+                    android:textColor="@color/mgm_text_color3"
+                    android:textSize="21dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인천작전동"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/mgm_text_color1"
+                    android:textSize="12dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인천작전동"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/mgm_text_color2"
+                    android:textSize="12dp"
+                    android:autoText="true" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="19dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout4"
+                android:layout_marginTop="9dp"
+                android:layout_below="@+id/linearLayout3"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인천작전동"
+                    android:textColor="@color/mgm_text_color4"
+                    android:textSize="12dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인천작전동"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/mgm_text_color4"
+                    android:textSize="12dp"
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <!-- 비디오 영역-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/linearLayout4"
+                android:id="@+id/linearLayout5"
+                android:gravity="center"
+                >
+
+                <VideoView
+                    android:layout_width="347dp"
+                    android:layout_height="225dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="인천 계양구 작전동 789-45"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="28dp"
+                        android:textSize="14dp"
+                        android:id="@+id/textView5" />
+
+                    <ImageButton
+                        android:layout_width="38dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/map_zoom_btn"
+                        android:layout_marginRight="27dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+
+                        android:layout_marginTop="28dp"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <!-- 구글맵-->
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:id="@+id/linearLayout6"
+                android:layout_below="@+id/linearLayout5"
+                >
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="360dp"
+                    android:layout_height="162dp"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="106dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="18dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/linearLayout6"
+                android:id="@+id/linearLayout7"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="소개 PPT문서 다운받기"
+                    android:id="@+id/textView6"
+                    android:textColor="@color/mgm_text_color3"
+                    android:textSize="16dp"
+                    />
+                <Button
+                    android:layout_width="161dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/ppt_download_btn"
+                    android:layout_below="@+id/textView6"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/button" />
+
+                <Button
+                    android:layout_width="81dp"
+                    android:layout_height="65dp"
+                    android:text="PPT문서"
+                    android:layout_alignBottom="@+id/button"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/ppt_button"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <View
+                android:layout_width="321dp"
+                android:layout_height="1dp"
+                android:id="@+id/line1"
+                android:background="@color/mgm_linedeatail_color"
+                android:layout_below="@+id/linearLayout7"
+                android:layout_centerHorizontal="true">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:id="@+id/linearLayout8"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="13dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상세정보"
+                    android:textSize="17dp"
+                    android:textColor="@color/mgm_text_color3"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/line2"
+                android:background="@color/mgm_infoline_color"
+                android:layout_below="@+id/linearLayout8"
+                android:layout_centerHorizontal="true">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/line2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/linearLayout9">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <TextView
+                        android:layout_width="139dp"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:background="@color/gray"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="15dp"
+
+                        />
+                    <TextView
+                        android:layout_width="139dp"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:background="@color/gray"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="139dp"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:background="@color/gray"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="139dp"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:background="@color/gray"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="139dp"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:background="@color/gray"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="139dp"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:background="@color/gray"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="139dp"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:background="@color/gray"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="139dp"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:background="@color/gray"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="139dp"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:background="@color/gray"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="139dp"
+                        android:layout_height="wrap_content"
+
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:background="@color/gray"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+
+                        android:paddingLeft="19dp"
+                        android:paddingTop="15dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시행사"
+                        android:textSize="13dp"
+                        android:textColor="@color/mgm_info_name"
+                        android:paddingLeft="19dp"
+                        android:paddingTop="10dp"
+
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/line3"
+                android:background="@color/mgm_infoline_color"
+                android:layout_below="@+id/linearLayout9"
+                android:layout_centerHorizontal="true">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line3"
+                android:layout_marginTop="37dp"
+                android:layout_marginLeft="19dp"
+                android:id="@+id/linearLayout10"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="문의"
+                    android:textSize="17dp"
+                    android:textColor="@color/mgm_text_color3"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout10"
+                android:id="@+id/linearLayout11"
+                android:layout_marginTop="13dp"
+                >
+               <include layout="@layout/list_row_item"
+
+                   >
+
+               </include>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@+id/linearLayout11"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#f1f1f1"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="이름"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="연락처"
+                        android:gravity="center"
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="146dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="메시지"
+                        android:layout_marginTop="18dp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="vertical"
+
+
+                        >
+
+                        <EditText
+                            android:layout_width="231dp"
+                            android:layout_height="31dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginLeft="15dp"
+
+                            android:background="@drawable/rect_text_edit_rectangle"
+
+                            />
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="vertical"
+
+
+                        >
+
+                        <EditText
+                            android:layout_width="231dp"
+                            android:layout_height="31dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/rect_text_edit_rectangle"
+
+                            />
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+
+
+                        >
+
+                        <Spinner
+                            android:layout_width="231dp"
+                            android:layout_height="31dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginTop="6dp"
+
+                            />
+
+
+                        <EditText
+                            android:layout_width="231dp"
+                            android:layout_height="111dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/rect_text_edit_rectangle"
+
+                            />
+
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            <ImageButton
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="43dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="14dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/mgm_link_btn"
+                android:id="@+id/imageButton3" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="#00b58a"
+            android:text="문의하기"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:id="@+id/inquiry_Bt"
+
+            android:layout_gravity="right|center_vertical" />
+
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

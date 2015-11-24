@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="7dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+
+        >
+
+        <FrameLayout
+            android:layout_width="117dp"
+            android:layout_height="120dp"
+            android:background="@color/gray"
+            >
+
+            <ImageView
+                android:id="@+id/image_1"
+                android:layout_width="117dp"
+                android:layout_height="120dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/ten"
+                />
+            <ImageButton
+
+                android:id="@+id/bookmark"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bookmark_normal"
+                android:layout_gravity="right|top" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+
+
+            >
+
+            <TextView
+
+                android:layout_marginLeft="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인천 쉐르빌 모델하우스"
+                android:textColor="@color/mgm_name_color"
+                android:textSize="14dp"
+                />
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인천 쉐르빌 모델하우스"
+                android:textColor="@color/mgm_adr_color"
+                android:textSize="11dp"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인천 쉐르빌 모델하우스"
+                android:textColor="@color/mgm_ad_color"
+                android:textSize="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.5dp"
+                android:layout_marginTop="5.5dp"
+                >
+
+                <TextView
+
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인천 쉐르빌 모델하우스"
+                    android:textColor="@color/mgm_price_color"
+                    android:textSize="16dp"
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="원"
+                    android:textColor="@color/mgm_won_color"
+                    android:textSize="10dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="218dp"
+                android:layout_height="1dp"
+                android:background="@color/mgm_line_color"
+                android:layout_marginLeft="17dp"
+                >
+
+
+            </View>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+
+                >
+
+                <TextView
+
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11dp"
+                    android:textColor="@color/mgm_adr_color"
+                    android:text="가나다라마바사아차카타파아하가아"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+

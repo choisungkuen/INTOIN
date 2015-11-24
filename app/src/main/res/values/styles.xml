@@ -3,7 +3,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-
+        <item name="android:windowContentOverlay">@null</item>
     </style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
@@ -19,11 +19,14 @@
 
         <!--<item name="tabIndicatorColor">@color/green</item>-->
         <!--<item name="tabIndicatorHeight">2dp</item>-->
-        <item name="tabPaddingStart">12dp</item>
-        <item name="tabPaddingEnd">12dp</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="tabPaddingStart">5dp</item>
+        <item name="tabPaddingEnd">5dp</item>
         <item name="tabBackground">@drawable/tab_color_selector</item>
         <item name="tabTextAppearance">@style/MyCustomTabTextNomal</item>
         <item name="tabSelectedTextColor">@color/tabenblefont</item>
+
     </style>
 
     <style name="MyCustomTabTextNomal" parent="TextAppearance.AppCompat.Button">
@@ -45,6 +48,44 @@
         <item name="android:layout_gravity">center</item>
 
 </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/green</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+
+
+
+
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/mgm_tab_normalcolor</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+
+
+    <!-- 트리뷰 커스텀-->
+
+
+    <style name="TreeNodeStyleCustom">
+        <item name="android:paddingLeft">20dp</item>
+
+        <!--<item name="android:showDividers">middle</item>-->
+        <!--<item name="android:divider">@android:drawable/divider_horizontal_bright</item>-->
+    </style>
+
+    <style name="TreeNodeStyleDivided">
+        <item name="android:showDividers">middle</item>
+        <item name="android:divider">@android:drawable/divider_horizontal_bright</item>
+    </style>
+
+
 
 
 

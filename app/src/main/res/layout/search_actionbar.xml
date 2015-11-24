@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="47dp"
+    android:orientation="horizontal"
+    android:background="#00b58a"
+
+    >
+
+    <EditText
+        android:id="@+id/search_et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rect_text_edit_rectangle2"
+        android:layout_alignTop="@+id/search_del_bt"
+        android:layout_toLeftOf="@+id/search_del_bt"
+        android:layout_toStartOf="@+id/search_del_bt"
+        android:layout_alignBottom="@+id/search_del_bt"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:hint="검색어 입력"
+        android:textSize="14dp"
+        android:textColor="#8c8b8b"
+        android:paddingLeft="21dp"
+        android:paddingRight="19dp"
+        android:drawableRight="@drawable/m_search_btn"
+        />
+
+    <Button
+        android:id="@+id/search_del_bt"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        android:background="@drawable/m_delete_btn"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+</RelativeLayout>

@@ -7,7 +7,9 @@
     tools:context=".MainActivity">
 
     <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
-        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_width="match_parent" android:theme="@style/AppTheme"
+
+        >
 
         <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
             android:layout_width="match_parent" android:layout_height="50dp"
@@ -28,6 +30,13 @@
             android:layout_height="37dp"
 
             />
+
+        <include layout="@layout/sub_toolbar"
+            android:id="@+id/sub_toolbar"
+            ></include>
+        <include layout="@layout/customer_sub_toolbar"
+            android:id="@+id/customer_sub_toolbar"
+            ></include>
 
     </android.support.design.widget.AppBarLayout>
 

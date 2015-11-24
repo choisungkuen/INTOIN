@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.example.intoin.myapplication.MainActivity;
+import com.example.intoin.myapplication.mainactivity.MainActivity;
 import com.example.intoin.myapplication.R;
 import com.example.intoin.myapplication.util.Util;
 

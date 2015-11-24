@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    >
+    
+    
+    <LinearLayout
+        android:layout_marginTop="17dp"
+        android:layout_width="329dp"
+        android:layout_height="136dp"
+        android:background="@drawable/d_box"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="19dp"
+                android:textSize="14dp"
+                android:textColor="#4e4f4f"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="연락처"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="19dp"
+                android:textSize="14dp"
+                android:textColor="#4e4f4f"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="구매목적"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="19dp"
+                android:textSize="14dp"
+                android:textColor="#4e4f4f"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            >
+
+            <EditText
+                android:layout_width="229dp"
+                android:layout_height="29dp"
+                android:background="@drawable/b_form"
+                android:layout_marginTop="12.5dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="13dp"
+                android:textSize="14dp"
+                android:textColor="#4e4f4f"
+                />
+            <EditText
+                android:layout_width="229dp"
+                android:layout_height="29dp"
+                android:background="@drawable/b_form"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="right"
+                android:textSize="14dp"
+                android:layout_marginRight="13dp"
+                android:textColor="#4e4f4f"
+                />
+
+            <Spinner
+                android:layout_width="229dp"
+                android:layout_height="29dp"
+                android:background="@drawable/b_form"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="right"
+                android:textSize="14dp"
+                android:layout_marginRight="13dp"
+                android:textColor="#4e4f4f"
+                >
+
+
+            </Spinner>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:layout_marginTop="11dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고객추가"
+            android:textSize="12dp"
+            android:textColor="#54606e"
+            />
+
+        <Button
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/d_plus_btn"
+            android:layout_marginRight="16dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="329dp"
+        android:layout_height="136dp"
+        android:background="@drawable/d_box"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="19dp"
+                android:textSize="14dp"
+                android:textColor="#4e4f4f"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="연락처"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="19dp"
+                android:textSize="14dp"
+                android:textColor="#4e4f4f"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="구매목적"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="19dp"
+                android:textSize="14dp"
+                android:textColor="#4e4f4f"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            >
+
+            <EditText
+                android:layout_width="229dp"
+                android:layout_height="29dp"
+                android:background="@drawable/b_form"
+                android:layout_marginTop="12.5dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="13dp"
+                android:textSize="14dp"
+                android:textColor="#4e4f4f"
+                />
+            <EditText
+                android:layout_width="229dp"
+                android:layout_height="29dp"
+                android:background="@drawable/b_form"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="right"
+                android:textSize="14dp"
+                android:layout_marginRight="13dp"
+                android:textColor="#4e4f4f"
+                />
+
+            <Spinner
+                android:layout_width="229dp"
+                android:layout_height="29dp"
+                android:background="@drawable/b_form"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="right"
+                android:textSize="14dp"
+                android:layout_marginRight="13dp"
+                android:textColor="#4e4f4f"
+                >
+
+
+            </Spinner>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:layout_marginTop="11dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고객삭제"
+            android:textSize="12dp"
+            android:textColor="#54606e"
+            />
+
+        <Button
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/d_plus_btn"
+            android:layout_marginRight="16dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="329dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="22dp"
+        android:layout_gravity="center"
+
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/b_next_btn"
+            android:textColor="@color/white"
+            android:text="다음"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

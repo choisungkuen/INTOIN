@@ -24,4 +24,45 @@
     <color name="intoin_radius_on">#09d0a0</color>
     <color name="intoin_radius_off">#81848d</color>
 
+    <!--MGM ITEM 텍스트컬러-->
+
+    <color name="mgm_name_color">#3f3f3f</color>
+    <color name="mgm_adr_color">#797a78</color>
+    <color name="mgm_ad_color">#8d8b8b</color>
+    <color name="mgm_won_color">#797a78</color>
+    <color name="mgm_price_color">#049d78</color>
+    <color name="mgm_day_color">#808281</color>
+
+    <!-- MGM 라인 컬러-->
+
+    <color name="mgm_line_color">#d1cfcf</color>
+    <color name="mgm_linedeatail_color">#c6c4c4</color>
+    <color name="mgm_infoline_color">#878686</color>
+
+
+    <!-- MGM 디테일 컬러-->
+
+    <color name="mgm_text_color1">#14a6af</color>
+    <color name="mgm_text_color2">#22bb8d</color>
+    <color name="mgm_text_color3">#434644</color>
+    <color name="mgm_text_color4">#909192</color>
+    <color name="mgm_text_color5">#bababa</color>
+
+    <!-- MGM상세정보 폰트 컬러-->
+
+    <color name="mgm_info_name">#4e4f4f</color>
+    <color name="mgm_info_content">#69696a</color>
+
+    <!-- MGM배경색 디테일 배경 색상-->
+
+
+    <color name="mgm_background_color">#f1f1f1</color>
+
+
+    <!-- MGM고객등록 탭폰트컬러-->
+    <color name="mgm_tab_enblecolor">#028f6d</color>
+    <color name="mgm_tab_normalcolor">#828282</color>
+
+
+
 </resources>

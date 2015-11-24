@@ -1,5 +1,6 @@
 package com.example.intoin.myapplication.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -10,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.intoin.myapplication.R;
-
+import com.example.intoin.myapplication.mainactivity.ModelDeatailActivity;
 
 
 /**
@@ -19,6 +20,7 @@ import com.example.intoin.myapplication.R;
 public class ModelHouseFragment extends Fragment{
 
     RecyclerView mRecyclerView;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -35,16 +37,17 @@ public class ModelHouseFragment extends Fragment{
 
     }
 
+
     @Override
     public void onStart() {
         super.onStart();
 
 
         mRecyclerView = (RecyclerView)getView().findViewById(R.id.masonry_grid);
-        GridLayoutManager glm = new GridLayoutManager(getActivity(), 2);
+        GridLayoutManager glm = new GridLayoutManager(getActivity(), 2 );
         glm.setSpanSizeLookup(new HeaderSpanSizeLookup(glm));
         mRecyclerView.setLayoutManager(glm);
-        Adapter adapter = new Adapter(getActivity());
+        Adapter adapter = new Adapter(getActivity(), null);
 //        mRecyclerView.addItemDecoration(new SpacesItemDecoration(5));
         mRecyclerView.setAdapter(adapter);
 
@@ -52,6 +55,13 @@ public class ModelHouseFragment extends Fragment{
             @Override
             public void onItemClick(View view, int position) {
                 Toast.makeText(getActivity() ,  position+"",Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(getActivity() , ModelDeatailActivity.class);
+                startActivity(intent);
+
+
+
+
 
             }
         });

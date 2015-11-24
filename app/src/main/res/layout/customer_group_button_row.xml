@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="18dp"
+        >
+
+        <Button
+            android:id="@+id/group_bt"
+            android:layout_width="329dp"
+            android:layout_height="42dp"
+            android:background="@drawable/c_group_btn"
+            android:textColor="#fff5f3"
+            android:textSize="17dp"
+            android:text="그룹관리"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

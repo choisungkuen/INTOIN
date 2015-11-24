@@ -27,7 +27,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.example.intoin.myapplication.BaseActivity;
+import com.example.intoin.myapplication.mainactivity.BaseActivity;
 import com.example.intoin.myapplication.viewpager.ViewpagerActivity;
 import com.kakao.auth.ErrorCode;
 import com.kakao.auth.ErrorResult;

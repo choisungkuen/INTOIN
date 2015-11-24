@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알 림"
+            android:textSize="18dp"
+            android:textColor="#00b589"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="50dp"
+        android:background="#00b589"
+        android:gravity="center"
+        android:id="@+id/textView4">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="메세지 보내기가 완료되었습니다."
+        android:id="@+id/textView3"
+        android:textSize="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="143dp"
+        android:text="확인"
+        android:id="@+id/ok_bt"
+        android:background="#00b589"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -9,7 +9,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.intoin.myapplication.BaseActivity;
+import com.example.intoin.myapplication.mainactivity.BaseActivity;
 import com.example.intoin.myapplication.Myapplication;
 import com.example.intoin.myapplication.R;
 import com.example.intoin.myapplication.util.Util;
