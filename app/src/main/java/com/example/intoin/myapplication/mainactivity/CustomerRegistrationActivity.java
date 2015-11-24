@@ -18,7 +18,8 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.example.intoin.myapplication.R;
-import com.example.intoin.myapplication.fragment.AgreementFragment;
+import com.example.intoin.myapplication.fragment.CustomerAgreementFragment;
+import com.example.intoin.myapplication.fragment.CustomerCertificationFragment;
 import com.example.intoin.myapplication.util.Util;
 
 import java.util.ArrayList;
@@ -59,9 +60,9 @@ public class CustomerRegistrationActivity extends FragmentActivity{
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new AgreementFragment());
-        adapter.addFrag(new DummyFragment());
-        adapter.addFrag(new DummyFragment());
+        adapter.addFrag(new CustomerAgreementFragment());
+        adapter.addFrag(new CustomerCertificationFragment());
+        adapter.addFrag(new CustomerRegistrationActivity.DummyFragment());
         viewPager.setAdapter(adapter);
     }
 

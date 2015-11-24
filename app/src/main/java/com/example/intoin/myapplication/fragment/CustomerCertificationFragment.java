@@ -11,12 +11,12 @@ import com.example.intoin.myapplication.R;
 /**
  * Created by choeseong-geun on 15. 11. 23..
  */
-public class AgreementFragment extends Fragment {
+public class CustomerCertificationFragment extends Fragment {
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.customer_agreement, container, false);
+        View v = inflater.inflate(R.layout.customer_certification, container, false);
 
         return v;
     }
