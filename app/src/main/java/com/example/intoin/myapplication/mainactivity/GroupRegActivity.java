@@ -22,17 +22,17 @@ public class GroupRegActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.message_activity);
+        setContentView(R.layout.group_reg_list);
         TextView textView = (TextView)findViewById(R.id.text);
         Button button = (Button)findViewById(R.id.icon);
-        Util.CustomActionBar(this,textView,"메세지 상대 선택" ,button);
+        Util.CustomActionBar(this,textView,"그룹관리" ,button);
 
 
 
 
-        ListView listview = (ListView)findViewById(R.id.message_listview);
-        String[] sw = new String[]{"전체","VIP","LINE","본부장","팀장","팀원","SK","미지정","김수진부장","김철수","이영희","테스트","테스트","테스트"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.message_list_row ,R.id.message_tv,sw);
+        ListView listview = (ListView)findViewById(R.id.grouplist_listview);
+        String[] sw = new String[]{"전체","VIP","LINE","본부장"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.group_reg_list_row ,R.id.group_list_tv,sw);
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

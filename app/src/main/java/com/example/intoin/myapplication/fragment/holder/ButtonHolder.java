@@ -4,9 +4,10 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.example.intoin.myapplication.R;
+import com.example.intoin.myapplication.mainactivity.GroupRegActivity;
+import com.example.intoin.myapplication.util.Util;
 import com.unnamed.b.atv.model.TreeNode;
 /**
  * Created by choeseong-geun on 15. 11. 19..
@@ -45,7 +46,7 @@ public class ButtonHolder extends TreeNode.BaseNodeViewHolder<ButtonHolder.Butto
     @Override
     public void onClick(View v) {
 
-        Toast.makeText(context,"테스트",Toast.LENGTH_SHORT).show();
+        Util.Intent(context , GroupRegActivity.class);
 
     }
 }

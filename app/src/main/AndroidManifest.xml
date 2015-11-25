@@ -152,10 +152,10 @@
             android:name=".mainactivity.MessageActivity"
             >
         </activity>
-
-
-
-
+        <activity
+            android:name=".mainactivity.GroupRegActivity"
+            >
+        </activity>
         <activity
             android:name=".viewpager.ViewpagerActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"

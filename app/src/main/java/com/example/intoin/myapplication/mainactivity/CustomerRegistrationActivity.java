@@ -20,6 +20,7 @@ import android.widget.TextView;
 import com.example.intoin.myapplication.R;
 import com.example.intoin.myapplication.fragment.CustomerAgreementFragment;
 import com.example.intoin.myapplication.fragment.CustomerCertificationFragment;
+import com.example.intoin.myapplication.fragment.CustomerRegistrationFragment;
 import com.example.intoin.myapplication.util.Util;
 
 import java.util.ArrayList;
@@ -62,7 +63,7 @@ public class CustomerRegistrationActivity extends FragmentActivity{
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new CustomerAgreementFragment());
         adapter.addFrag(new CustomerCertificationFragment());
-        adapter.addFrag(new CustomerRegistrationActivity.DummyFragment());
+        adapter.addFrag(new CustomerRegistrationFragment());
         viewPager.setAdapter(adapter);
     }
 
