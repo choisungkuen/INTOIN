@@ -44,9 +44,7 @@
                 android:background="@drawable/c_tab_btn3"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="15dp"
-
                 android:id="@+id/imageView3" />
-
 
 
 

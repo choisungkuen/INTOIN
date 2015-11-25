@@ -15,10 +15,10 @@ import com.example.intoin.myapplication.util.Util;
 /**
  * Created by choeseong-geun on 15. 11. 19..
  */
-public class MessageActivity extends Activity{
+public class MessageActivity extends Activity implements View.OnClickListener{
 
-
-
+    Button message_add_bt;
+    ListView message_listview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,17 +28,33 @@ public class MessageActivity extends Activity{
         Util.CustomActionBar(this,textView,"메세지 상대 선택" ,button);
 
 
+        message_add_bt = (Button)findViewById(R.id.message_add_bt);
+        message_listview = (ListView)findViewById(R.id.message_listview);
+        message_add_bt.setOnClickListener(this);
 
 
-        ListView listview = (ListView)findViewById(R.id.message_listview);
+
         String[] sw = new String[]{"전체","VIP","LINE","본부장","팀장","팀원","SK","미지정","김수진부장","김철수","이영희","테스트","테스트","테스트"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.message_list_row ,R.id.message_tv,sw);
-        listview.setAdapter(adapter);
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        message_listview.setAdapter(adapter);
+        message_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
             }
         });
+
+
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        switch (v.getId()){
+            case R.id.message_add_bt:
+                Util.Intent(this, MessageContentActivity.class);
+                break;
+        }
+
     }
 }

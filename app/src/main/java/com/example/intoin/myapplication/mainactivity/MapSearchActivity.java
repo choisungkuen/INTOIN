@@ -19,7 +19,7 @@ import java.util.Arrays;
 /**
  * Created by choeseong-geun on 15. 11. 17..
  */
-public class SearchActivity extends FragmentActivity implements View.OnClickListener{
+public class MapSearchActivity extends FragmentActivity implements View.OnClickListener{
 
     Button search_del_bt;
     EditText search_et;

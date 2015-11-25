@@ -111,7 +111,7 @@
         </activity>
 
         <activity
-            android:name=".mainactivity.SearchActivity"
+            android:name=".mainactivity.MapSearchActivity"
 
             >
 
@@ -156,6 +156,19 @@
             android:name=".mainactivity.GroupRegActivity"
             >
         </activity>
+
+        <activity
+            android:name=".mainactivity.MessageContentActivity"
+            >
+        </activity>
+
+        <activity
+            android:name=".mainactivity.MainSearchActivity"
+            >
+        </activity>
+
+
+
         <activity
             android:name=".viewpager.ViewpagerActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"

@@ -40,7 +40,7 @@
             android:text="선택완료"
             android:textColor="#fff5f3"
             android:textSize="17dp"
-            android:id="@+id/inquiry_Bt"
+            android:id="@+id/message_add_bt"
             android:layout_gravity="center" />
 
 

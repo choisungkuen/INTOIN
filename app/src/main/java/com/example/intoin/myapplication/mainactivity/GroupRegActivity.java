@@ -38,6 +38,19 @@ public class GroupRegActivity extends Activity{
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+//                UI 테스트를 위해 임시로 이렇게 씀.
+                Button reg_bt = (Button)parent.findViewById(R.id.reg_bt);
+
+
+                reg_bt.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Util.GroupAndLineNameReg(GroupRegActivity.this,"그룹명 편집", "팀원");
+                    }
+                });
+                Button del_bt = (Button)view.findViewById(R.id.del_bt);
+
             }
         });
     }

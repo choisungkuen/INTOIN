@@ -57,10 +57,6 @@
         <item name="tabIndicatorHeight">2dp</item>
         <item name="tabPaddingStart">12dp</item>
         <item name="tabPaddingEnd">12dp</item>
-
-
-
-
         <item name="tabBackground">?attr/selectableItemBackground</item>
         <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
         <item name="tabSelectedTextColor">?android:textColorPrimary</item>
@@ -68,6 +64,24 @@
     <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">13dp</item>
         <item name="android:textColor">@color/mgm_tab_normalcolor</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+
+
+
+    <style name="MainSearchTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/gray</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">@drawable/maintab_search_color_selector</item>
+        <item name="tabTextAppearance">@style/MainSearchTabLayoutTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/search_tab_normalcolor</item>
+    </style>
+    <style name="MainSearchTabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/search_tab_enblecolor</item>
         <item name="textAllCaps">true</item>
     </style>
 

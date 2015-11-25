@@ -64,5 +64,11 @@
     <color name="mgm_tab_normalcolor">#828282</color>
 
 
+    <!-- 서치메인 액티비티 탭 컬러-->
+    <color name="search_tab_enblecolor">#a6a5a5</color>
+    <color name="search_tab_normalcolor">#ffffff</color>
+
+
+
 
 </resources>

@@ -40,6 +40,7 @@
             android:layout_height="23dp"
             android:layout_marginRight="9dp"
             android:background="@drawable/c1_edit_btn"
+            android:id="@+id/reg_bt"
             />
 
         <Button
@@ -47,6 +48,7 @@
             android:layout_height="23dp"
             android:layout_marginRight="15dp"
             android:background="@drawable/c1_delete_btn"
+            android:id="@+id/del_bt"
             />
 
 

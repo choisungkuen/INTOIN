@@ -12,6 +12,7 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -58,9 +59,9 @@ public class Util {
 
 
     // 메시지 팝업
-    public static void MSGCompletePop(Context context,final Activity activity, String text) {
+    public static void MSGCompletePop(Activity context, String text) {
         AlertDialog.Builder ab = new AlertDialog.Builder(context);
-        View view = activity.getLayoutInflater().inflate(R.layout.msg_dialog, null);
+        View view = context.getLayoutInflater().inflate(R.layout.msg_dialog, null);
         view.setBackgroundColor(Color.TRANSPARENT);
         Button ok_bt = (Button)view.findViewById(R.id.ok_bt);
         TextView textView = (TextView)view.findViewById(R.id.textView3);
@@ -98,12 +99,13 @@ public class Util {
         View view = activity.getLayoutInflater().inflate(R.layout.customer_dialog, null);
         view.setBackgroundColor(Color.TRANSPARENT);
         Button ok_bt = (Button)view.findViewById(R.id.ok_bt);
+        Button can_bt = (Button)view.findViewById(R.id.can_bt);
         TextView textView = (TextView)view.findViewById(R.id.textView3);
 
 
 //        String text 변수에 등록된이름 전달받아서 처리
 
-        textView.setText(text+"을 삭제하시겠습니까?");
+        textView.setText(text + "을 삭제하시겠습니까?");
         ab.setView(view);
         final AlertDialog dialog1 = ab.create();
         ok_bt.setOnClickListener(new View.OnClickListener() {
@@ -112,6 +114,14 @@ public class Util {
                 dialog1.dismiss();
             }
         });
+        can_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog1.dismiss();
+            }
+        });
+
+
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
         lp.copyFrom(dialog1.getWindow().getAttributes());
         lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
@@ -153,6 +163,49 @@ public class Util {
                 dialog1.dismiss();
             }
         });
+        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+        lp.copyFrom(dialog1.getWindow().getAttributes());
+        lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
+        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+        dialog1.show();
+        Window window = dialog1.getWindow();
+        window.setAttributes(lp);
+
+    }
+
+    // 그룹 라인명 편집 다이얼로그
+    public static void GroupAndLineNameReg(Activity activity, String title,String text) {
+        AlertDialog.Builder ab = new AlertDialog.Builder(activity);
+        View view = activity.getLayoutInflater().inflate(R.layout.customer_dialog_reg, null);
+        view.setBackgroundColor(Color.TRANSPARENT);
+        Button ok_bt = (Button)view.findViewById(R.id.ok_bt);
+        Button can_bt = (Button)view.findViewById(R.id.can_bt);
+        EditText edittext = (EditText)view.findViewById(R.id.edittext);
+        TextView actionbar_title = (TextView)view.findViewById(R.id.title);
+
+//        Line명 편집 및 그룹명 편집 같이쓰기위해 title 받아야함.
+
+        actionbar_title.setText(title);
+
+//        String text 변수에 등록된이름 전달받아서 처리
+
+        edittext.setText(text);
+        ab.setView(view);
+        final AlertDialog dialog1 = ab.create();
+        ok_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog1.dismiss();
+            }
+        });
+        can_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog1.dismiss();
+            }
+        });
+
+
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
         lp.copyFrom(dialog1.getWindow().getAttributes());
         lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
@@ -223,6 +276,9 @@ public class Util {
         Intent intent = new Intent(context , activity);
         context.startActivity(intent);
     }
+
+
+
 
 
 
