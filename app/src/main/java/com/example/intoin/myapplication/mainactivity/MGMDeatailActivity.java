@@ -22,7 +22,7 @@ import me.relex.circleindicator.CircleIndicator;
  */
 public class MGMDeatailActivity extends FragmentActivity implements View.OnClickListener{
 
-    Button mgm_callbt , mgm_okbt;
+    Button mgm_callbt , mgm_okbt , link_icon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,16 +32,18 @@ public class MGMDeatailActivity extends FragmentActivity implements View.OnClick
 
         mgm_callbt = (Button)findViewById(R.id.mgm_callbt);
         mgm_okbt = (Button)findViewById(R.id.mgm_okbt);
+        link_icon = (Button)findViewById(R.id.link_icon);
 
         mgm_callbt.setOnClickListener(this);
         mgm_okbt.setOnClickListener(this);
+        link_icon.setOnClickListener(this);
 
 
 
         TextView textView = (TextView)findViewById(R.id.text);
         Button button1 = (Button)findViewById(R.id.icon);
-        Button button2 = (Button)findViewById(R.id.link_icon);
-        Util.DeatailActionBar(this, textView, "인천쉐르빌", button1, button2);
+
+        Util.DeatailActionBar(this, textView, "인천쉐르빌", button1);
 
 
         // DEFAULT
@@ -81,6 +83,11 @@ public class MGMDeatailActivity extends FragmentActivity implements View.OnClick
 
             case R.id.mgm_callbt:
                 Util.Intent(this , InquiryActivity.class);
+                break;
+
+            case R.id.link_icon:
+                Util.DeatailLinkPop(this);
+
                 break;
         }
     }

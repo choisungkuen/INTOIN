@@ -18,7 +18,7 @@ import me.relex.circleindicator.CircleIndicator;
  */
 public class ModelDeatailActivity extends FragmentActivity implements View.OnClickListener{
 
-    private Button inquiry_Bt;
+    private Button inquiry_Bt, link_icon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +27,11 @@ public class ModelDeatailActivity extends FragmentActivity implements View.OnCli
 
         TextView textView = (TextView)findViewById(R.id.text);
         Button button1 = (Button)findViewById(R.id.icon);
-        Button button2 = (Button)findViewById(R.id.link_icon);
-        Util.DeatailActionBar(this, textView, "인천쉐르빌", button1, button2);
+        link_icon = (Button)findViewById(R.id.link_icon);
+        Util.DeatailActionBar(this, textView, "인천쉐르빌", button1);
         inquiry_Bt = (Button)findViewById(R.id.inquiry_Bt);
         inquiry_Bt.setOnClickListener(this);
+        link_icon.setOnClickListener(this);
 
         // DEFAULT
         ViewPager defaultViewpager = (ViewPager) findViewById(R.id.viewpager_default);
@@ -67,6 +68,13 @@ public class ModelDeatailActivity extends FragmentActivity implements View.OnCli
             case R.id.inquiry_Bt:
                 Util.Intent(this , InquiryActivity.class);
                 break;
+
+            case R.id.link_icon:
+                Util.DeatailLinkPop(this);
+
+                break;
         }
+
+
     }
 }

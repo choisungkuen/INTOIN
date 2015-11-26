@@ -1,7 +1,6 @@
 package com.example.intoin.myapplication.util;
 
 import android.app.Activity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -15,7 +14,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.intoin.myapplication.R;
 import com.example.intoin.myapplication.mainactivity.CustomerAddActivity;
@@ -173,14 +171,64 @@ public class Util {
 
     }
 
+
+    // 연락처 공유 팝업
+    public static void DeatailLinkPop(final Activity activity) {
+        AlertDialog.Builder ab = new AlertDialog.Builder(activity);
+        View view = activity.getLayoutInflater().inflate(R.layout.deatail_link_dialog, null);
+        view.setBackgroundColor(Color.TRANSPARENT);
+        Button ok_bt = (Button)view.findViewById(R.id.ok_bt);
+        Button can_bt = (Button)view.findViewById(R.id.can_bt);
+        ListView listview = (ListView)view.findViewById(R.id.listview);
+        String[] sw = new String[]{"카카오톡으로 공유","메세지로 공유"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(activity,android.R.layout.simple_list_item_1,sw);
+        listview.setAdapter(adapter);
+
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+
+            }
+        });
+        ab.setView(view);
+        final AlertDialog dialog1 = ab.create();
+        ok_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog1.dismiss();
+            }
+        });
+        can_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog1.dismiss();
+            }
+        });
+        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+        lp.copyFrom(dialog1.getWindow().getAttributes());
+        lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
+        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+        dialog1.show();
+        Window window = dialog1.getWindow();
+        window.setAttributes(lp);
+
+    }
+
+
     // 그룹 라인명 편집 다이얼로그
-    public static void GroupAndLineNameReg(Activity activity, String title,String text) {
+    public static void GroupAndLineNameReg(Activity activity, String title,String text , String type) {
         AlertDialog.Builder ab = new AlertDialog.Builder(activity);
         View view = activity.getLayoutInflater().inflate(R.layout.customer_dialog_reg, null);
         view.setBackgroundColor(Color.TRANSPARENT);
         Button ok_bt = (Button)view.findViewById(R.id.ok_bt);
         Button can_bt = (Button)view.findViewById(R.id.can_bt);
         EditText edittext = (EditText)view.findViewById(R.id.edittext);
+        if("ADD".equals(type)){
+            edittext.setHint("그룹 이름을 입력하세요.");
+        }else{
+            edittext.setText(text);
+        }
         TextView actionbar_title = (TextView)view.findViewById(R.id.title);
 
 //        Line명 편집 및 그룹명 편집 같이쓰기위해 title 받아야함.
@@ -189,7 +237,7 @@ public class Util {
 
 //        String text 변수에 등록된이름 전달받아서 처리
 
-        edittext.setText(text);
+
         ab.setView(view);
         final AlertDialog dialog1 = ab.create();
         ok_bt.setOnClickListener(new View.OnClickListener() {
@@ -231,7 +279,7 @@ public class Util {
     }
     //상세페이지 커스텀 액션바
 
-    public static void DeatailActionBar(final Context context, TextView textView, String title, Button button1, Button button2){
+    public static void DeatailActionBar(final Context context, TextView textView, String title, Button button1){
         textView.setText(title);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -240,12 +288,7 @@ public class Util {
             }
         });
 
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context , "링크",Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
     }
 

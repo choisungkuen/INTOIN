@@ -18,6 +18,9 @@ import android.widget.Toast;
 
 import com.example.intoin.myapplication.R;
 import com.example.intoin.myapplication.fragment.MainSearchAllFragment;
+import com.example.intoin.myapplication.fragment.MainSearchCustomerFragment;
+import com.example.intoin.myapplication.fragment.MainSearchMgmFragment;
+import com.example.intoin.myapplication.fragment.MainSearchModelFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,9 +58,10 @@ public class MainSearchActivity extends FragmentActivity{
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new MainSearchAllFragment(), "전체");
-        adapter.addFrag(new DummyFragment(getResources().getColor(R.color.mgm_ad_color)), "모델하우스");
-        adapter.addFrag(new DummyFragment(getResources().getColor(R.color.mgm_ad_color)), "MGM");
-        adapter.addFrag(new DummyFragment(getResources().getColor(R.color.mgm_ad_color)), "고객관리");
+        adapter.addFrag(new MainSearchModelFragment(), "모델하우스");
+        adapter.addFrag(new MainSearchMgmFragment(), "MGM");
+        adapter.addFrag(new MainSearchCustomerFragment(), "고객관리");
+
         viewPager.setAdapter(adapter);
     }
 

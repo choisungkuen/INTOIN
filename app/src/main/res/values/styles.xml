@@ -86,6 +86,22 @@
     </style>
 
 
+    <style name="MapSearchTabLayout" parent="Widget.Design.TabLayout">
+
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">@drawable/maptab_search_color_selector</item>
+        <item name="tabTextAppearance">@style/MapSearchTabLayoutTextAppearance</item>
+        <item name="tabSelectedTextColor">#00b589</item>
+    </style>
+    <style name="MapSearchTabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#8c8c8c</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+
 
     <!-- 트리뷰 커스텀-->
 

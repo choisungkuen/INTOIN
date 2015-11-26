@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="39dp"
+    android:descendantFocusability="blocksDescendants"
 
     >
     <LinearLayout
@@ -15,6 +16,8 @@
             android:layout_height="22dp"
             android:layout_marginLeft="15dp"
             android:background="@drawable/c1_move_btn"
+
+
             />
 
         <TextView
@@ -41,6 +44,8 @@
             android:layout_marginRight="9dp"
             android:background="@drawable/c1_edit_btn"
             android:id="@+id/reg_bt"
+
+
             />
 
         <Button
@@ -49,6 +54,8 @@
             android:layout_marginRight="15dp"
             android:background="@drawable/c1_delete_btn"
             android:id="@+id/del_bt"
+
+
             />
 
 

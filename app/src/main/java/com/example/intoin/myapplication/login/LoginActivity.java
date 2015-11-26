@@ -39,7 +39,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
         myapplication = Myapplication.getGlobalApplicationContext();
-        Log.e("해시키!!!!!!!", myapplication.getPackageHashKey(LoginActivity.this));
+        Log.e("해시키", myapplication.getPackageHashKey(LoginActivity.this));
 
 
         intoin_join_bt = (Button)findViewById(R.id.intoin_join_bt);

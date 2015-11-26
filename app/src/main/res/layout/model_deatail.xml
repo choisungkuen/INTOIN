@@ -190,6 +190,7 @@
                 android:orientation="vertical"
                 android:layout_below="@+id/linearLayout4"
                 android:id="@+id/linearLayout5"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
                 >
 
@@ -774,8 +775,8 @@
 
 
             <ImageButton
-                android:layout_width="52dp"
-                android:layout_height="52dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:layout_gravity="right"
                 android:layout_marginTop="43dp"
                 android:layout_alignParentRight="true"

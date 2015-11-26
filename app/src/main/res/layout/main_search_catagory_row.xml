@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minHeight="33dp"
-    android:background="#8c8b8b"
+    android:background="@color/mgm_background_color"
 
     >
 
@@ -79,7 +79,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="건"
-                        android:textColor="@color/gray"
+                        android:textColor="#8c8b8b"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:layout_marginRight="17dp"

@@ -69,6 +69,11 @@
     <color name="search_tab_normalcolor">#ffffff</color>
 
 
+    <!-- map searc 액티비티 탭 컬러-->
+    <color name="map_search_tab_enblecolor">#ffffff</color>
+    <color name="map_search_tab_normalcolor">#f0f0f0</color>
+
+
 
 
 </resources>
